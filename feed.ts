@@ -30,14 +30,14 @@ export class FeedPage implements OnInit {
   startPosition;
 
   mainusers: AngularFirestoreDocument
-  mainuser: AngularFirestoreDocument
+  
   sub
   username: string
   profilePic: string
   userPosts
   posts
 
-  titre: string
+ //you can see i tried a lot of things( titre: string
   author:string
   date: string 
   postboost1
@@ -50,11 +50,11 @@ export class FeedPage implements OnInit {
   num
    effect: string
     desc2: string 
-     desc: string
+ //    desc: string)
  
   constructor(  private popoverController: PopoverController,private nativePageTransitions: NativePageTransitions,private modalController: ModalController,private afs: AngularFirestore, private user: UserService, private router: Router, private alertController: AlertController) {
 
-  this.mainuser = afs.doc(`users/${user.getUID()}`)
+  this.mainusers = afs.doc(`users/${user.getUID()}`)
     
   this.sub = this.mainuser.valueChanges().subscribe(event =>{
 
