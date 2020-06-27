@@ -1,4 +1,4 @@
-///i think if you change users to posts you can take the post
+///i think if you change users to posts you can take the data
 
 //but i don't know how
 
