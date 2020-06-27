@@ -1,3 +1,7 @@
+///i think if you change users to posts you can take the post
+
+//but i don't know how
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularFirestore, AngularFirestoreDocument } from "@angular/fire/firestore";
